@@ -1,10 +1,10 @@
 {
   "name": "node-red-contrib-http-request",
   "version": "0.1.6",
-  "description": "A Node-RED node for performing http(s) requests that use Request library with optimized proxy support.",
+  "description": "A Node-RED node for performing http(s) requests that use Request library with optimized proxy support and adds a parser for fixin header errors",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/spawnrider/node-red-contrib-http-request.git"
+    "url": "git+https://github.com/BaltaRodriguez/node-red-contrib-http-request-relaxed.git"
   },
   "keywords": [
     "node-red",
@@ -30,7 +30,7 @@
 }],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/spawnrider/node-red-contrib-http-request/issues"
+    "url": "https://github.com/BaltaRodriguez/node-red-contrib-http-request-relaxed/issues"
   },
   "node-red": {
     "nodes": {
@@ -38,9 +38,10 @@
     }
   },
   "dependencies": {
-    "request": "^2.74.0"
+    "request": "^2.74.0",
+    "http-parser-js": "0.4.4"
   },
-  "homepage": "https://github.com/mikakaraila/node-red-contrib-opcua#readme",
+  "homepage": "https://github.com/BaltaRodriguez/node-red-contrib-http-request-relaxed#readme",
   "scripts": {
     "test": "karma start opcua.conf.js --log-level debug --single-run"
   }
